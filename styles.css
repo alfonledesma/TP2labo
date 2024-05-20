@@ -1,0 +1,265 @@
+:root{
+    --primary-font: Georgia, 'Times New Roman', Times, serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--primary-font);
+    background-color: black;
+}  
+section:hover {
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    background-color: #b0b0b0;
+    transition: background-color 0.3s;
+}
+section div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.info{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    z-index: 100;
+    color: black;
+}
+.titulo {
+    font-family: var(--primary-font);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    font-size: 30px; 
+    text-align: center;
+}
+.comida {
+    height: 250px;
+    width: 100%; 
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    position: relative;
+    margin: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+.container {
+    align-items: center;
+    font-size: 24px; 
+    justify-content: flex-start; 
+    padding: 30px;
+    margin: 10px;
+    background-color: rgb(238, 238, 193);
+}
+.imagen-brasil{
+    height: 5rem;
+    width: 5rem;
+    background-image: url('brasil.png');
+    background-size: cover;
+    justify-content: flex-start; 
+    margin:10px;
+}
+.imagen-picanha{
+    height: 100%;
+    width: 50%;
+    background-image: url('https://www.thespruceeats.com/thmb/AjUIE8h6WjAn_rRdK-kWFG-ld9Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-top-sirloin-cap-or-picanha-p2-4119892-Hero-01-eea7e4260a684446ac0661a69959f2c1.jpg');
+    background-size: cover;
+    border-radius: 5px;
+}
+.imagen-malasia{
+    height: 5rem;
+    width: 5rem;
+    background-image: url('malasia.png');
+    background-size: cover;
+    justify-content: flex-start;
+    margin:10px;
+}
+.imagen-roticanai{
+    height: 100%;
+    width: 50%;
+    background-image: url('https://www.tasteatlas.com/Images/Dishes/4382dae5b7a842f386742b74cebf706d.jpg?mw=1300');
+    background-size: cover;
+    border-radius: 5px;
+}
+.imagen-tailandia{
+    height: 5rem;
+    width: 5rem;
+    background-image: url('tailandia.png');
+    background-size: cover;
+    justify-content: flex-start;
+    margin:10px;
+}
+.imagen-pathkaphrao{
+    height: 100%;
+    width: 50%;
+    background-image: url('https://www.tasteatlas.com/images/dishes/ac07712d9bcc40bbb2deb4a2038b2733.jpg?mw=1300');
+    background-size: cover;
+    border-radius: 5px;
+}
+.imagen-italia{
+    height: 5rem;
+    width: 5rem;
+    background-image: url('italia.png');
+    background-size: cover;
+    justify-content: flex-start;
+    margin:10px;
+}
+.imagen-pizzanapo{
+    height: 100%;
+    width: 50%;
+    background-image: url('https://sivarious.com/wp-content/uploads/2021/03/pizza-napolitana-3.jpg');
+    background-size: cover;
+    border-radius: 5px;
+}
+.imagen-china{
+    height: 5rem;
+    width: 5rem;
+    background-image: url('china.png');
+    background-size: cover;
+    justify-content: flex-start;
+    margin:10px;
+}
+.imagen-guotie{
+    height: 100%;
+    width: 50%;
+    background-image: url('https://www.tasteatlas.com/images/dishes/19405648c1f0404c9e1910161ad38b03.jpg?mw=1300');
+    background-size: cover;
+    border-radius: 5px;
+}
+.contenedor-puntuacion {
+    display: flex;
+    align-items: center;
+    font-size: 24px; 
+}
+.estrella {
+    width: 50px; 
+    height: 50px; 
+    margin-right: 5px; 
+}
+.numero {
+    font-weight: bold; 
+    font-size: 22px;
+}
+.boton{
+    position: absolute;
+    bottom: 2.5rem;
+    right: 45%;
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.boton button{
+    color: #fff;
+    border: white;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    transition: box-shadow 0.3s ease;
+}
+
+.boton:hover{
+box-shadow: 0 0 10px 10px rgba(255, 255, 0, 0.7);
+}
+
+
+@media screen and (min-width: 280px) and (max-width: 488px){
+.boton{
+  display: none;   
+}
+.descripcion {
+    display: none;
+}
+.container {
+    display: none;
+}
+.contenedor-puntuacion {
+    display: none;
+}
+.content-data{
+    display: none;
+}
+.imagen-picanha{
+    display: none;
+}
+#plato1{
+    background-image: url('https://www.thespruceeats.com/thmb/AjUIE8h6WjAn_rRdK-kWFG-ld9Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-top-sirloin-cap-or-picanha-p2-4119892-Hero-01-eea7e4260a684446ac0661a69959f2c1.jpg');
+   background-size: cover;
+   position: relative;
+}
+#plato2{
+    background-image: url('https://www.tasteatlas.com/Images/Dishes/4382dae5b7a842f386742b74cebf706d.jpg?mw=1300');
+
+   background-size: cover;
+   position: relative;
+}
+#plato3{
+    background-image: url('https://www.tasteatlas.com/images/dishes/ac07712d9bcc40bbb2deb4a2038b2733.jpg?mw=1300');
+
+   background-size: cover;
+   position: relative;
+}
+#plato4{
+    background-image: url('https://www.tasteatlas.com/images/dishes/785295d4ab6f4f0bab43d5fcf2e123b6.jpg?mw=1300');
+
+   background-size: cover;
+   position: relative;
+}
+
+#plato5{
+    background-image: url('https://www.tasteatlas.com/images/dishes/19405648c1f0404c9e1910161ad38b03.jpg?mw=1300');
+
+   background-size: cover;
+   position: relative;
+}
+.comida:hover .info{
+    display: block;
+    text-align: center;
+}
+}
+@media (280px <= width <= 570px) {
+    .imagen-brasil{
+        display: none;
+    }
+    .imagen-malasia{
+        display: none;
+    }
+    .imagen-tailandia{
+        display: none;
+    }
+    .imagen-italia{
+        display: none;
+    }
+    .imagen-china{
+        display: none;
+    }
+}  
+@media (280px <= width <= 822px) {
+    .contenedor-puntuacion{
+        display: none;
+    } 
+  }
